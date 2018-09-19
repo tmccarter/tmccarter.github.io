@@ -1,0 +1,22 @@
+:root {
+	--bodyTextColor: hsl(0, 0%, 82%);
+	--bodyBgColor: hsl(0, 0%, 19%);
+	--linkColor: hsl(175, 57%, 40%);
+	--linkHoverColor: hsl(175, 57%, 50%);
+}
+
+h1, h2, p, a {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	color: var(--bodyTextColor);
+}
+a {
+	color: var(--linkColor);
+}
+a:hover, a:focus {
+	color: var(--linkHoverColor);
+}
+body {
+	max-width: 34em;
+	padding: 32px;
+	background-color: var(--bodyBgColor);
+}
