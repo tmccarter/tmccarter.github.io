@@ -5,9 +5,14 @@
 	getDevicesLink.onclick = getDevices;
 	function requestDevices(e) {
 		e.preventDefault();
-		const device = navigator.usb.requestDevice({ filters: [] }).then(device => {
-			console.log(device);
-		});
+		const device = navigator.usb
+			.requestDevice({ filters: [] })
+			.then(device => {
+				console.log(device);
+			})
+			.catch(err => {
+				console.error(`ERROR: ${err}`);
+			});
 	}
 	function getDevices(e) {
 		e.preventDefault();
