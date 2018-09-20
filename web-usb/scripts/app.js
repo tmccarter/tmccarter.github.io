@@ -24,10 +24,10 @@
 			.then(devices => {
 				console.log(devices);
 				devices.map(device => {
-					console.log(`VendorId: ${device.vendorId}`);
-					console.log(`ProuctId: ${device.productId}`);
 					console.log(`ManufacturerName: ${device.manufacturerName}`);
 					console.log(`ProductName: ${device.productName}`);
+					console.log(`VendorId: ${device.vendorId}`);
+					console.log(`ProuctId: ${device.productId}`);
 					console.log('------------------------------');
 				});
 			})
