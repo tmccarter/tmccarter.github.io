@@ -35,4 +35,14 @@
 				console.error(`ERROR: ${err}`);
 			});
 	}
+
+	let pcsc = require('pcsclite');
+
+	let pcsc = pcsc();
+
+	console.log(`pcsc: ${pcsc}`);
+
+	pcsc.on('reader', reader => {
+		console.log(`new reader detected: ${reader.name}`);
+	});
 })();
