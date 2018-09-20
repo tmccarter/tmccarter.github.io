@@ -1,0 +1,14 @@
+{
+	"name": "WebUsbPOC",
+	"description": "A sandbox for chrome's web usb api",
+	"version": "1.0.0",
+	"license": "ISC",
+	"main": "app.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tmccarter/tmccarter.github.io.git"
+	},
+	"dependencies": {
+		"pcsclite": "^0.6.0"
+	}
+}
