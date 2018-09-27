@@ -1,0 +1,68 @@
+:root {
+  --media-xs: 420px;
+  --media-sm: 1024px;
+  --media-lg: 1200px;
+}
+.home {
+  background: #9D50BB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(180deg, rgb(58, 58, 58), rgb(195, 195, 195));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, rgb(58, 58, 58), rgb(195, 195, 195)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.home .title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.home .description {
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.home .buttons {
+  margin: 24px 0;
+}
+
+.home .docs-button {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  padding: 12px 32px;
+  transition: all .3s linear;
+}
+
+.home .docs-button:hover {
+  background: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+.home .docs-button i {
+  padding-right: 12px;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  .home {
+    justify-content: flex-start;
+    padding: 0px 1em;
+    min-height: 100vh;
+  }
+  .title {
+    padding-top: 1em;
+  }
+  .home .description {
+    font-size: 1.0rem;
+  }
+}

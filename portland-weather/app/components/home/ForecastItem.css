@@ -1,0 +1,55 @@
+li.forecastItem {
+  text-align: center;
+}
+li.dayOfWeek {
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+}
+li.date {
+  padding-top: 0px;
+}
+li.tempurature {
+  font-size: 2rem;
+  padding-bottom: 0px;
+}
+li.condition {
+  font-size: 1.5rem;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 420px) {
+  ul.forecastItems {
+    display: table;
+    padding: 0px;
+  }
+  ul.forecastItems > li:first-child {
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+  li.forecastItem {
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+  }
+  li.forecastItem > ul {
+    display: flex;
+    align-items: center;
+  }
+  li.forecastItem > ul li {
+    line-height: 50px;
+    padding: 0 .3em;
+  }
+  li.dayOfWeek {
+    font-size: 1.25rem;
+  }
+  li.forecastItem > ul li.date {
+    display: none;
+  }
+  li.forecastItem > ul li.icon {
+    line-height: 0px;
+  }
+  li.wind span.windLabel {
+    display: none;
+  }
+  li.condition {
+    font-size: 1.0rem;
+  }
+}
